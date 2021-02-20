@@ -46,6 +46,13 @@ repositories {
 
 dependencies {
     implementation ('org.jitsi.react:jitsi-meet-sdk:3.1.0') {
+      exclude group: 'com.facebook',module:'hermes'
+      exclude group: 'com.facebook.react',module:'react-native-community-async-storage'
+      exclude group: 'com.facebook.react',module:'react-native-community_netinfo'
+      exclude group: 'com.facebook.react',module:'react-native-svg'
+      exclude group: 'com.facebook.react',module:'react-native-webview'
+      exclude group: 'com.facebook.react',module:'react-native-linear-gradient'
+      exclude group: 'com.facebook.react',module:'react-native-background-timer'
       transitive = true
     }
 }
